@@ -7,11 +7,11 @@ import * as rls from "readline-sync"
 
 let num: number = rls.questionInt("Ingrese un numero que muestre su tabla de multiplicar:");
 let limit: number = rls.questionInt("Ingrese valor límite hasta donde desee mostrar resultados:");
-let result: string = "";
+let result:number = x;
 
-for (let i:number = 1; i >= limit; i--) {
-     if (i >= limit) {
-          result = '${num * limit}';
-          }
-          console.log (num, "x", i, "=", result);
-     }
+for (let i:number = 1; i <= limit; i++) {
+     if (i <= limit) 
+     result = num * x;
+}
+          console.log (num * x, "=", result)
+

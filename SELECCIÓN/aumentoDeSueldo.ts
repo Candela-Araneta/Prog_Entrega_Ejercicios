@@ -11,21 +11,20 @@
 import * as rls from "readline-sync";
 
 let salario:number = rls.questionInt("Ingrese su salario actual:");
-let n1:number = (0>=15000);
-let n2:number = (15001>=20000);
-let n3:number = (20001>=25000);
-let n4:number = (25000>=);
+let n1:number = (<=15000);
+let n2:number = (<=15001) && (>=20000);
+let n3:number = (<=20001) && (>=25000);
+let n4:number = (>=25000);
 
-<switch> (salario) {
-    case 1 == n1;
+if (salario == n1) {
         console.log("Este mes usted tendrá un 20% de aumento.");
-        break;
-    case 2 == n2;
+}
+    if else (salario == n2); {
         console.log("Este mes usted tendrá un 10% de aumento.");
-        break;
-    case 3 == n3;
+    }
+    if else (salario == n3); {
         console.log("Este mes usted tendrá un 5% de aumento.");
-        break;
-    default == n4;
+    }
+    else (salario == n4); {
         console.log("Este mes no le corresponde aumento.");
 }

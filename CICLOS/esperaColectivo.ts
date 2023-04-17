@@ -3,13 +3,11 @@
 
 import * as rls from "readline-sync";
 
-let llegadaColectivo:string = rls.question("¿Ya llegó el colectivo? (S/N):");
-let S =number: 2
-let N =number: 2
+let esperaColectivo:string = rls.question("¿Ya llegó el colectivo?:");
+let S, N:string = "";
 
-while (llegadaColectivo == "S") {
-    console.log("Ya llegó. Subo y me voy");
-}{
-
-console.log("Todavía no ha llegado. Sigo esperando.");
+if (esperaColectivo == S) {
+    console.log("Ya llegó. Subo y me voy.");
 }
+    else (esperaColectivo == N) 
+         console.log("Todavía no ha llegado. Sigo esperando.");
